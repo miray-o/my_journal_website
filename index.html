@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A digital journal exploring personal archives, everyday memories, and Mediterranean objects."
+    />
+    <title>Welcome to my journal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kolker+Brush&family=Lancelot&family=Inter:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="viewport">
+      <div class="scene-wrap">
+        <div class="scene" id="scene">
+          <section class="page cover-page" data-page="cover" aria-label="Journal cover">
+            <div class="cover-paper"></div>
+            <img class="cover-art" src="photographs/closed journal.svg" alt="A closed, well-loved journal with a bird and an evil-eye charm" />
+            <svg class="welcome" viewBox="0 0 2000 520" aria-hidden="true">
+              <defs>
+                <path id="welcome-curve" d="M 0 390 C 240 25, 1430 0, 1850 350" />
+              </defs>
+              <text>
+                <textPath href="#welcome-curve">welcome to my journal</textPath>
+              </text>
+            </svg>
+            <button class="script-label open-label" data-go="journal" aria-label="Open the journal">open it!</button>
+            <button class="info-button" data-open="intro" aria-label="About this digital journal">
+              <span aria-hidden="true">i</span>
+            </button>
+          </section>
+
+          <section class="page journal-page" data-page="journal" aria-label="Journal charms">
+            <div class="paper"></div>
+            <img class="journal-art" src="photographs/loose elastic journal.svg" alt="A journal with a loose elastic and two glass charms" />
+            <p class="script-copy prompt">click on items to learn more about them</p>
+            <button class="hotspot bird-hotspot" data-open="bird" aria-label="Learn about the little bird charm"></button>
+            <button class="hotspot eye-hotspot" data-open="eye" aria-label="Learn about the evil-eye charm"></button>
+            <button class="script-label previous-label" data-go="cover">previous</button>
+            <button class="script-label next-label" data-go="sticker">next page</button>
+          </section>
+
+          <section class="page photo-page sticker-page" data-page="sticker" aria-label="Journal sticker page">
+            <div class="paper"></div>
+            <img class="page-photo" src="photographs/IMG_4799 1.svg" alt="An open journal displaying a sticker and saved mementos" />
+            <button class="hotspot sticker-hotspot" data-open="sticker" aria-label="Learn about the HAU sticker"></button>
+            <button class="script-label previous-label" data-go="journal">previous</button>
+            <button class="script-label next-label" data-go="commonplace">next page</button>
+          </section>
+
+          <section class="page photo-page commonplace-page" data-page="commonplace" aria-label="Commonplace journal page">
+            <div class="paper"></div>
+            <img class="page-photo" src="photographs/IMG_4801 1.svg" alt="An open commonplace notebook" />
+            <button class="hotspot commonplace-hotspot" data-open="commonplace" aria-label="Learn about the commonplace notebook"></button>
+            <button class="script-label previous-label" data-go="sticker">previous</button>
+            <button class="script-label next-label" data-go="memories">next page</button>
+          </section>
+
+          <section class="page photo-page memories-page" data-page="memories" aria-label="Memories in the journal">
+            <div class="paper"></div>
+            <img class="page-photo" src="photographs/IMG_4803 1.svg" alt="A journal spread filled with personal memories" />
+            <button class="hotspot memories-hotspot" data-open="diary" aria-label="Learn about the memory-keeping notebook"></button>
+            <button class="script-label previous-label" data-go="commonplace">previous</button>
+            <button class="script-label next-label" data-go="finish">next page</button>
+          </section>
+
+          <section class="page finish-page" data-page="finish" aria-label="Thank you for visiting">
+            <div class="paper"></div>
+            <img class="finish-art" src="photographs/IMG_4805 1.svg" alt="The closed journal at the end of the visit" />
+            <svg class="finished" viewBox="0 0 3333 3333" aria-hidden="true">
+              <defs>
+                <path id="finished-curve" d="M 100 450 C 400 20, 2300 20, 3200 430" />
+              </defs>
+              <text>
+                <textPath href="#finished-curve" startOffset="50%" text-anchor="middle">you finished it!</textPath>
+              </text>
+            </svg>
+            <button class="script-label thank-you">thank you for visiting!</button>
+            <button class="script-label previous-label" data-go="memories">previous</button>
+          </section>
+
+          <section class="page history-page" data-page="glass-history" aria-label="History of glass shaping">
+            <div class="paper"></div>
+            <h1 class="script-copy history-title">History of Glass Shaping</h1>
+            <div class="history-card history-ancient">
+              <p>Ancient Lydian Foundations (6th c. B.C.)</p>
+              <p>Glass beads and vessels using Brick furnaces</p>
+            </div>
+            <div class="history-card history-roman">Roman Blowing Era (1st-4th c. AD)</div>
+            <img class="history-image history-pitcher" src="photographs/design/glass-history-pitcher.png" alt="Ancient Roman glass pitcher" />
+            <p class="history-caption pitcher-caption">Glass Pitcher, Eastern Mediterranean, Roman, ca. 3rd–4th century AD. Yale University Art Gallery.</p>
+            <div class="history-card history-ottoman">Ottoman mosque decorations (14-19th c. ad)</div>
+            <img class="history-image history-lamp" src="photographs/design/glass-history-lamp.png" alt="Ottoman glass mosque lamp" />
+            <p class="history-caption lamp-caption">
+              Mosque Lamp at Sultanahmet Palace, Istanbul, Türkiye. Accessed at
+              <a href="https://islamicart.museumwnf.org/database_item.php?id=object;ISL;tr;Mus01;23;pt&amp;cp" target="_blank" rel="noreferrer"> the Islamic Art Museum database</a>.
+            </p>
+            <img class="history-arrow arrow-one" src="photographs/design/glass-history-arrow-5.svg" alt="" aria-hidden="true" />
+            <img class="history-arrow arrow-two" src="photographs/design/glass-history-arrow-6.svg" alt="" aria-hidden="true" />
+            <img class="history-arrow arrow-three" src="photographs/design/glass-history-arrow-3.svg" alt="" aria-hidden="true" />
+            <img class="history-image intaglios-image" src="photographs/design/glass-history-intaglios.png" alt="A group of unfinished glass intaglios" />
+            <p class="history-caption intaglios-caption">
+              Group of unfinished glass intaglios, mostly from early Roman contexts in Field 49 (occupied from the Lydian through the Late Roman periods). Accessed via
+              <a href="https://sardisexpedition.org/en/essays/kst-cahill-kst-2012" target="_blank" rel="noreferrer">Archaeological Exploration of Sardis by Harvard College</a>.
+            </p>
+            <img class="history-image beads-image" src="photographs/design/glass-history-beads.png" alt="Colorful handmade glass beads" />
+            <img class="history-image furnace-image" src="photographs/design/glass-history-furnace.png" alt="Glassworkers gathered around a wood-fired furnace" />
+            <p class="history-caption furnace-caption">Evil Eye Bead furnace and craftspeople, İzmir, Turkey, photo by Doğanay Çevik</p>
+            <div class="history-card history-today">
+              <p>Today in Nazarköy and Görece</p>
+              <p>handmade, wood-fired evil eye beads using traditional pine wood kilns.</p>
+            </div>
+            <button class="script-label history-back" data-go="journal">back to journal</button>
+          </section>
+
+          <section class="page history-page evil-history" data-page="evil-history" aria-label="Evil-eye history">
+            <div class="paper"></div>
+            <h1 class="script-copy evil-history-title">Evil Eye in Mediterranean and Aegean Coasts</h1>
+            <p class="evil-history-copy evil-history-left">
+              Belief in the evil eye dates back over 10,000 years to Paleolithic Iberian engravings, 5,000-year-old Sumerian artifacts, and 3,000-year-old Syrian amulets. In Classical Greece, philosophers including Plato, Aristotle, and Plutarch conceptualized the phenomenon as vaskania (the belief that the human gaze emits subtle energy capable of transferring harm, envy, or unspoken malice.)
+            </p>
+            <div class="evil-history-image evil-history-eye">
+              <img src="photographs/design/evil-history-eye.png" alt="Ancient glass eye bead" />
+            </div>
+            <p class="evil-history-caption">
+              Glass eye bead<br />
+              <a href="https://www.metmuseum.org/art/collection/search?q=Greek%2C+Eastern+Mediterranean&amp;searchField=ArtistCulture" target="_blank" rel="noreferrer">Greek, Eastern Mediterranean</a><br />
+              ca. 4th century BCE, accessed at
+              <a href="https://www.metmuseum.org/art/collection/search/250030" target="_blank" rel="noreferrer"> The MET Museum Collections</a>
+            </p>
+            <img class="evil-history-line evil-line-one" src="photographs/design/evil-history-line.svg" alt="" aria-hidden="true" />
+            <div class="evil-history-image evil-history-vessel">
+              <img src="photographs/design/evil-history-vessel.png" alt="Phoenician glass eye bead" />
+            </div>
+            <p class="evil-history-caption evil-history-vessel-caption">
+              Glass eye bead Phoenician ca. 330–70 BCE, accessed at
+              <a href="https://www.metmuseum.org/art/collection/search/250030" target="_blank" rel="noreferrer">The MET Museum Collections</a>
+            </p>
+            <img class="evil-history-line evil-line-two" src="photographs/design/evil-history-line.svg" alt="" aria-hidden="true" />
+            <p class="evil-history-copy evil-history-right">
+              The traditional talisman features a cobalt blue concentric circle because light-colored eyes were historically rare across the Aegean, Western Asia Minor, and the wider Mediterranean. Blue-eyed individuals were often associated with casting *vaskania*, making blue the protective counter-color used to reflect the gaze back to its source.
+            </p>
+            <a class="evil-history-source" href="https://www.athensjournals.gr/mediterranean/2026-12-1-4-Lopez.pdf" target="_blank" rel="noreferrer">SOURCE</a>
+            <button class="script-label history-back" data-go="journal">back to journal</button>
+          </section>
+
+          <section class="page commonplacing-page" data-page="commonplacing" aria-label="Commonplacing habits">
+            <div class="paper"></div>
+            <h1 class="script-copy commonplacing-title">A brief history of commonplacing</h1>
+            <p class="commonplacing-intro">
+              Popular throughout the seventeenth and eighteenth centuries, a commonplace book served as a personalized encyclopedia of quotations, excerpts, and reflections gathered from a reader's literary journeys.
+            </p>
+            <img class="commonplacing-image commonplacing-index" src="photographs/design/commonplacing-index.png" alt="John Locke's double-page index from a commonplace book" />
+            <p class="commonplacing-index-caption">
+              John Locke's double-page index, as printed in the English translation of New Method for Common-Place Books (1706). Accessed at
+              <a href="https://publicdomainreview.org/collection/john-lockes-method-for-common-place-books-1685/" target="_blank" rel="noreferrer">Public Domain Review</a>.
+            </p>
+            <div class="commonplacing-copy">
+              <p>Faced with the natural limits of memory, philosopher John Locke developed a systematic method of commonplacing over 25 years. One of his methods were a two-page index at the front of the notebook listing initial letters alongside their first following vowel.</p>
+              <p>I prefer to use smaller and thinner notebooks because they are easier to carry in my leather journal and I don’t feel so overwhelmed finishing them up. Since my notebooks are smaller in content, I use a simpler indexing method with just page numbers and headers.</p>
+            </div>
+            <img class="commonplacing-image commonplacing-example" src="photographs/design/commonplacing-example.png" alt="Handwritten index from an older notebook" />
+            <p class="commonplacing-example-caption">An example of my indexing (from an older notebook)</p>
+            <button class="script-label history-back" data-go="commonplace">back to journal</button>
+          </section>
+        </div>
+        <div class="modal-layer" id="modal-layer" hidden>
+          <div class="modal-backdrop" data-close-modal></div>
+          <div class="modal-scale-wrap">
+            <section class="popup-card" id="popup-card" tabindex="-1" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+              <div class="popup-surface"></div>
+              <div class="popup-content" id="popup-content"></div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
